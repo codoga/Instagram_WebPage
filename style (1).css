@@ -1,0 +1,92 @@
+body {
+  padding-top: 54px; /* Navbar'ı sabitlemek için */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 54px;
+  background-color: white;
+}
+
+.logo {
+  margin-left: 192px; /* Logo margin'ini ayarla */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-left: 5px; /* Arama kısmını ortala ve sola yasla */
+}
+
+.search input::placeholder {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  background-image: url('assets/search-icon.png'); /* Arka plan resmini ekle */
+  background-position: 40%;
+  background-size: 6%;
+  background-repeat: no-repeat; /* Tekrar etmemesi için */
+}
+
+.menu {
+  margin-top: 2rem; /* Sağ üst menüye margin ver */
+  margin-left: 5px;
+}
+
+@media (max-width: 576px) {
+  .menu {
+    display: none; /* Küçük ekranlarda menüyü gizle */
+  }
+}
+
+.middlearea {
+  margin-top: 2rem; /* İçerik alanı için margin ver */
+}
+
+.middlearea .col {
+  max-height: 200px !important; /* Maksimum yükseklik ayarı */
+}
+
+@media (min-width: 576px) {
+  .middlearea .col {
+    flex: 0 0 6; /* Ölçek ayarı */
+    max-width: 50%; /* Maksimum genişlik */
+  }
+}
+
+.stories .storytext {
+  order: -1; /* İsimlerin resmin altına gelmesi için sıralama ayarı */
+}
+
+.content .more {
+  text-align: right; /* Üç noktanın sağa alınması */
+}
+
+.actions .action {
+  border: none; /* Beğeni, yorum, paylaş kısmındaki border kaldırma */
+}
+
+.bookmark {
+  margin-right: 7px; /* Bookmark ikonunun offset'i */
+}
+
+.card-header,
+.card-footer {
+  background-color: white; /* Card header ve footer beyaz renk */
+}
+
+.comment {
+  text-align: right; /* Yorum paylaş metnini sağa al */
+}
+
+.stickysidebar {
+  position: sticky;
+  top: 0; /* Sağ panele yapışkan konumlandırma */
+}
+
+.rightpanel {
+  background-color: white; /* Sağ panel arkaplan rengi beyaz */
+  border: none; /* Sağ panel kenarlık yok */
+}

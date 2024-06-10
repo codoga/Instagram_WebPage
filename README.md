@@ -1,2 +1,2 @@
-# Instagram_WebPage
- An Instagram Web page created with Bootstrap
+# instagrambootstrapclone
+Simple HTML Instagram clone made with Bootstrap.
